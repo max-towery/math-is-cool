@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="strConn-Web.config Connection String" description="strConn Connection String used in web.config by the application to access the database." defaultValue="Data Source = pine.arvixe.com;Initial Catalog=math_is_cool;Integrated Security=false;User ID=mathiscool;Password=mathiscool" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Tamara\\Desktop\\math\ is\ cool\\MathIsCool\\MathIsCool\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='strConn']/@connectionString" />
+  </parameter>
+  <parameter name="math_is_coolConnectionString-Web.config Connection String" description="math_is_coolConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=pine.arvixe.com;Initial Catalog=math_is_cool;Persist Security Info=True;User ID=mathiscool;Password=mathiscool" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Tamara\\Desktop\\math\ is\ cool\\MathIsCool\\MathIsCool\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='math_is_coolConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="math_is_cool-Web.config Connection String" description="math_is_cool Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Controllers.MathIsCoolDB.csdl|res://*/Controllers.MathIsCoolDB.ssdl|res://*/Controllers.MathIsCoolDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=pine.arvixe.com;initial catalog=math_is_cool;persist security info=True;user id=mathiscool;password=mathiscool;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Tamara\\Desktop\\math\ is\ cool\\MathIsCool\\MathIsCool\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='math_is_cool']/@connectionString" />
+  </parameter>
+  <parameter name="math_is_cool2ConnectionString-Web.config Connection String" description="math_is_cool2ConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=pine.arvixe.com;Initial Catalog=math_is_cool2;Persist Security Info=True;User ID=mathiscool;Password=mathiscool" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Tamara\\Desktop\\math\ is\ cool\\MathIsCool\\MathIsCool\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='math_is_cool2ConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="MathIsCool.Models.ApplicationDbContext-Web.config Connection String" description="MathIsCool.Models.ApplicationDbContext Connection String used in web.config by the application to access the database." defaultValue="MathIsCool.Models.ApplicationDbContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Tamara\\Desktop\\math\ is\ cool\\MathIsCool\\MathIsCool\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MathIsCool.Models.ApplicationDbContext']/@connectionString" />
+  </parameter>
+</parameters>

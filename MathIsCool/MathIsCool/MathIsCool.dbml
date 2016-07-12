@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="math_is_cool2" Class="MathIsCoolDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=pine.arvixe.com;Initial Catalog=math_is_cool2;Persist Security Info=True;User ID=mathiscool" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="math_is_cool2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Role" Member="Roles">
+    <Type Name="Role">
+      <Column Name="RoleID" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="Role_UserRole" Member="UserRoles" ThisKey="RoleID" OtherKey="RoleId" Type="UserRole" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.[user]" Member="users">
+    <Type Name="user">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="perm_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="address_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="user_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="passkey" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="lname" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="last_login" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="last_reg" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="email_confirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="security_stamp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="user_invoice" Member="invoices" ThisKey="user_id" OtherKey="user_id" Type="invoice" />
+      <Association Name="user_region" Member="regions" ThisKey="user_id" OtherKey="user_id" Type="region" />
+      <Association Name="user_registration" Member="registrations" ThisKey="user_id" OtherKey="user_id" Type="registration" />
+      <Association Name="permission_user" Member="permission" ThisKey="perm_id" OtherKey="perm_id" Type="permission" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="User1s">
+    <Type Name="User1">
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="EmailConfirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordHash" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SecurityStamp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PhoneNumberConfirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TwoFactorEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LockoutEndDateUtc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LockoutEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AccessFailedCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="AddressID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="User1_UserClaim" Member="UserClaims" ThisKey="UserID" OtherKey="UserId" Type="UserClaim" />
+      <Association Name="User1_UserLogin" Member="UserLogins" ThisKey="UserID" OtherKey="UserId" Type="UserLogin" />
+      <Association Name="User1_UserRole" Member="UserRoles" ThisKey="UserID" OtherKey="UserId" Type="UserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserClaim" Member="UserClaims">
+    <Type Name="UserClaim">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="ClaimType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ClaimValue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="User1_UserClaim" Member="User1" ThisKey="UserId" OtherKey="UserID" Type="User1" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserLogin" Member="UserLogins">
+    <Type Name="UserLogin">
+      <Column Name="LoginProvider" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProviderKey" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="User1_UserLogin" Member="User1" ThisKey="UserId" OtherKey="UserID" Type="User1" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserRole" Member="UserRoles">
+    <Type Name="UserRole">
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Role_UserRole" Member="Role" ThisKey="RoleId" OtherKey="RoleID" Type="Role" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User1_UserRole" Member="User1" ThisKey="UserId" OtherKey="UserID" Type="User1" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.address" Member="addresses">
+    <Type Name="address">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="address_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="street" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="zip" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="extension" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="address_comp_location" Member="comp_locations" ThisKey="address_id" OtherKey="address_id" Type="comp_location" />
+      <Association Name="address_competition" Member="competitions" ThisKey="address_id" OtherKey="address_id" Type="competition" />
+      <Association Name="address_school" Member="schools" ThisKey="address_id" OtherKey="address_id" Type="school" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.calendar" Member="calendars">
+    <Type Name="calendar">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cal_id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="event" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="min_priv" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.comp_level" Member="comp_levels">
+    <Type Name="comp_level">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="comp_level_competition" Member="competitions" ThisKey="id" OtherKey="level_id" Type="competition" />
+      <Association Name="comp_level_registration" Member="registrations" ThisKey="id" OtherKey="comp_level" Type="registration" />
+      <Association Name="comp_level_sample" Member="samples" ThisKey="id" OtherKey="comp_level" Type="sample" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.comp_location" Member="comp_locations">
+    <Type Name="comp_location">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="comp_loc_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="address_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="map_url" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="region_id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="comp_location_competition" Member="competitions" ThisKey="comp_loc_id" OtherKey="comp_loc_id" Type="competition" />
+      <Association Name="address_comp_location" Member="address" ThisKey="address_id" OtherKey="address_id" Type="address" IsForeignKey="true" />
+      <Association Name="region_comp_location" Member="region" ThisKey="region_id" OtherKey="region_id" Type="region" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.competition" Member="competitions">
+    <Type Name="competition">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="comp_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="level_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="address_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="comp_loc_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="team_limit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="status_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="schedule" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="school_team_limit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="competition_registration" Member="registrations" ThisKey="comp_id" OtherKey="comp_id" Type="registration" />
+      <Association Name="address_competition" Member="address" ThisKey="address_id" OtherKey="address_id" Type="address" IsForeignKey="true" />
+      <Association Name="comp_level_competition" Member="comp_level" ThisKey="level_id" OtherKey="id" Type="comp_level" IsForeignKey="true" />
+      <Association Name="comp_location_competition" Member="comp_location" ThisKey="comp_loc_id" OtherKey="comp_loc_id" Type="comp_location" IsForeignKey="true" />
+      <Association Name="status_competition" Member="status" ThisKey="status_id" OtherKey="id" Type="status" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.faq" Member="faqs">
+    <Type Name="faq">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="faq_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[level]" Member="level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="question" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="answer" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.invoice" Member="invoices">
+    <Type Name="invoice">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="invoice_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="payment" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="value" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="payment_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="invoice_line_item" Member="line_items" ThisKey="invoice_id" OtherKey="invoice_id" Type="line_item" />
+      <Association Name="user_invoice" Member="user" ThisKey="user_id" OtherKey="user_id" Type="user" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.line_item" Member="line_items">
+    <Type Name="line_item">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="line_item_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="invoice_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="sku_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="line_item_registration" Member="registrations" ThisKey="line_item_id" OtherKey="line_item_id" Type="registration" />
+      <Association Name="invoice_line_item" Member="invoice" ThisKey="invoice_id" OtherKey="invoice_id" Type="invoice" IsForeignKey="true" />
+      <Association Name="sku_line_item" Member="sku" ThisKey="sku_id" OtherKey="sku_id" Type="sku" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.math_level" Member="math_levels">
+    <Type Name="math_level">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="math_level_student" Member="students" ThisKey="id" OtherKey="student_level" Type="student" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.newsItem" Member="newsItems">
+    <Type Name="newsItem">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="news_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="news_content" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.permissions" Member="permissions">
+    <Type Name="permission">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="perm_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="security" Type="System.String" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="permission_user" Member="users" ThisKey="perm_id" OtherKey="perm_id" Type="user" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.region" Member="regions">
+    <Type Name="region">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="region_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="region_comp_location" Member="comp_locations" ThisKey="region_id" OtherKey="region_id" Type="comp_location" />
+      <Association Name="region_school" Member="schools" ThisKey="region_id" OtherKey="region_id" Type="school" />
+      <Association Name="user_region" Member="user" ThisKey="user_id" OtherKey="user_id" Type="user" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.registration" Member="registrations">
+    <Type Name="registration">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="reg_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="comp_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="school_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="line_item_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="comp_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="registration_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="num_teams" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="coach_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="is_paid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="registration_team" Member="teams" ThisKey="reg_id" OtherKey="reg_id" Type="team" />
+      <Association Name="comp_level_registration" Member="comp_level1" ThisKey="comp_level" OtherKey="id" Type="comp_level" IsForeignKey="true" />
+      <Association Name="competition_registration" Member="competition" ThisKey="comp_id" OtherKey="comp_id" Type="competition" IsForeignKey="true" />
+      <Association Name="line_item_registration" Member="line_item" ThisKey="line_item_id" OtherKey="line_item_id" Type="line_item" IsForeignKey="true" />
+      <Association Name="user_registration" Member="user" ThisKey="user_id" OtherKey="user_id" Type="user" IsForeignKey="true" />
+      <Association Name="registration_type_registration" Member="registration_type1" ThisKey="registration_type" OtherKey="id" Type="registration_type" IsForeignKey="true" />
+      <Association Name="school_registration" Member="school" ThisKey="school_id" OtherKey="school_id" Type="school" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.registration_type" Member="registration_types">
+    <Type Name="registration_type">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="registration_type_registration" Member="registrations" ThisKey="id" OtherKey="registration_type" Type="registration" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.samples" Member="samples">
+    <Type Name="sample">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sample_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="comp_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="year" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="test_url" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="comp_level_sample" Member="comp_level1" ThisKey="comp_level" OtherKey="id" Type="comp_level" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.school" Member="schools">
+    <Type Name="school">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="school_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="address_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="short_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="division" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="last_reg" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="approved" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="school_registration" Member="registrations" ThisKey="school_id" OtherKey="school_id" Type="registration" />
+      <Association Name="address_school" Member="address" ThisKey="address_id" OtherKey="address_id" Type="address" IsForeignKey="true" />
+      <Association Name="region_school" Member="region" ThisKey="region_id" OtherKey="region_id" Type="region" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.sku" Member="skus">
+    <Type Name="sku">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sku_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="price" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="sku_line_item" Member="line_items" ThisKey="sku_id" OtherKey="sku_id" Type="line_item" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.static_pages" Member="static_pages">
+    <Type Name="static_page">
+      <Column Name="type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.status" Member="status">
+    <Type Name="status">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="status_competition" Member="competitions" ThisKey="id" OtherKey="status_id" Type="competition" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.student" Member="students">
+    <Type Name="student">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="student_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="student_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ind_num" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="team_id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="math_level_student" Member="math_level" ThisKey="student_level" OtherKey="id" Type="math_level" IsForeignKey="true" />
+      <Association Name="team_student" Member="team" ThisKey="team_id" OtherKey="team_id" Type="team" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.team" Member="teams">
+    <Type Name="team">
+      <Column Name="team_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="reg_id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="team_student" Member="students" ThisKey="team_id" OtherKey="team_id" Type="student" />
+      <Association Name="registration_team" Member="registration" ThisKey="reg_id" OtherKey="reg_id" Type="registration" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.CalendarCompetitions" Member="CalendarCompetitions">
+    <Type Name="CalendarCompetition">
+      <Column Name="[level]" Member="level" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="street" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="zip" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="schedule" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="region_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.competitions" Member="competitions1">
+    <Type Name="competitions">
+      <Column Name="team_limit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="schedule" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="region" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="street" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="zip" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="[level]" Member="level" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="comp_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="level_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="address_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="comp_loc_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="status_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="loc_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.locations" Member="locations">
+    <Type Name="location">
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="street" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="zip" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="region" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="region_id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="comp_loc_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="mathiscool.RegistrationView" Member="RegistrationViews">
+    <Type Name="RegistrationView">
+      <Column Name="school_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="coach_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="num_teams" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="is_paid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="registration_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="comp_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="comp_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="reg_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="school_team_limit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="team_limit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="teamName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="student_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ind_num" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="student_id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="team_id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 19.625, 23" name="MathIsCool">
+  <DataContextMoniker Name="/MathIsCoolDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b9bb21f3-56cb-4b32-835b-dc40332581db" absoluteBounds="8.75, 18.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/MathIsCoolDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6366ce5d-a8cc-439f-95a0-62173c4e4bf7" absoluteBounds="8.765, 18.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8fc6f053-9ef6-4e22-8f34-dd64053669b9" absoluteBounds="0.75, 14.75, 2, 3.6939111328125005">
+      <DataClassMoniker Name="/MathIsCoolDataContext/user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12dc5c38-564a-4f65-80b8-ab100126cf9a" absoluteBounds="0.765, 15.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3259f7cd-878e-40c2-9b48-2c5745f09a3e" absoluteBounds="8.75, 9.125, 2, 3.6939111328124987">
+      <DataClassMoniker Name="/MathIsCoolDataContext/User1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="656b3fe4-04b0-41cf-95d9-3b29719fd5ea" absoluteBounds="8.765, 9.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8faaa2c2-94cb-409c-9b10-3cdbcaa26cf2" absoluteBounds="11.5, 13.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/UserClaim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6053a7dd-068f-4f36-a861-fc556aa7a17f" absoluteBounds="11.515, 13.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56359bd8-94ec-4f65-95a3-072a8d6c41e5" absoluteBounds="11.5, 11, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/MathIsCoolDataContext/UserLogin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd3c7904-8c8e-40f2-9364-7239ccd1372c" absoluteBounds="11.515, 11.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0342420-76d4-446c-892b-3969e61bb194" absoluteBounds="11.5, 8.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/MathIsCoolDataContext/UserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9480cd58-0587-4b95-a121-10346e85d79a" absoluteBounds="11.515, 8.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9fc9fc22-cdaf-4461-a54b-5f6e20ffbf7e" absoluteBounds="11.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/MathIsCoolDataContext/calendar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6f88f2d-9307-4eae-9d15-58d1169a32f6" absoluteBounds="11.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5723b20-ba48-401f-ae11-90d0b7051b5e" absoluteBounds="3.5, 8.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/MathIsCoolDataContext/comp_level" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ce62908-4cb2-4135-8901-d84bdd7c0f53" absoluteBounds="3.515, 8.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9fba44f7-b0af-489e-9217-2b08faca77ca" absoluteBounds="3.5, 1.875, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/MathIsCoolDataContext/comp_location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4894877-53e4-417e-9e70-6a143fbe047a" absoluteBounds="3.515, 2.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba1fa815-cf65-43b9-8004-d179bdc55288" absoluteBounds="14.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/MathIsCoolDataContext/faq" />
+      <nestedChildShapes>
+        <elementListCompartment Id="834b9504-bf97-4da3-ace4-994d218bae8a" absoluteBounds="14.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ad5bb76c-d6ba-4857-979d-5791764faf0b" absoluteBounds="3.5, 15.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/invoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d8dd4a3-c44c-486b-b9cf-ae37f8a4740e" absoluteBounds="3.515, 16.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15988a48-8695-4277-8597-7d69f4e339d7" absoluteBounds="6.25, 14.625, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/MathIsCoolDataContext/line_item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b98284d8-2a0f-41e8-b12a-b054d8e9d911" absoluteBounds="6.265, 15.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="87c87992-5f78-411e-bc04-a067306ce95d" absoluteBounds="14.75, 3.75, 2, 1.193992513020834">
+      <DataClassMoniker Name="/MathIsCoolDataContext/math_level" />
+      <nestedChildShapes>
+        <elementListCompartment Id="026e60ba-fd15-4c4f-872e-5b34dd473082" absoluteBounds="14.765, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a512a8f-3ae3-4790-9c78-c957cf94b7ec" absoluteBounds="14.75, 5.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/newsItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9940c03-d32a-487e-8c29-577369bca5d7" absoluteBounds="14.765, 6.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a243effe-0933-43e7-aef7-f64b069a0cef" absoluteBounds="1.5, 19.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/permission" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9381f44d-919a-4783-89a1-c14dbae06885" absoluteBounds="1.5150000000000001, 20.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95312566-06ab-4abb-b006-b54c6be9928e" absoluteBounds="14.75, 8.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/region" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5856780f-cdee-48d2-898d-032613ffe4c3" absoluteBounds="14.765, 9.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe77c6b5-9287-4548-b6d7-2fadcb06a9c6" absoluteBounds="9, 3.125, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/MathIsCoolDataContext/registration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c7edacd-a949-4375-822e-ce3554d13e08" absoluteBounds="9.015, 3.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dbc67bdf-5aec-45a3-9f7e-97d9312039b6" absoluteBounds="6.25, 6.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/MathIsCoolDataContext/registration_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ce327ba-c194-4dfb-ac9b-6f3f4ef52791" absoluteBounds="6.265, 6.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2f7db280-ee14-47dd-bc1e-2f3043f4a232" absoluteBounds="6.25, 20.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/MathIsCoolDataContext/sample" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2061579-3ef2-4755-8a26-1e3e5cf443ac" absoluteBounds="6.265, 21.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4785ec33-bd89-484d-a836-9a7d2cde2985" absoluteBounds="3.5, 4.5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/MathIsCoolDataContext/school" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22d8ed05-198d-431b-8052-d46b591cf62c" absoluteBounds="3.515, 4.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="accd9556-1a7c-417c-86e6-df2bceb0f35b" absoluteBounds="3.5, 12.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/sku" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f7852b2-3a1b-4c0c-ac46-7bf3147f32e3" absoluteBounds="3.515, 12.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e4713ed0-7bd9-400c-adc1-5d7058a88638" absoluteBounds="14.75, 11.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/MathIsCoolDataContext/static_page" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e3fb546-c318-4ce7-92c6-df3d8aed109b" absoluteBounds="14.765, 12.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="228b5a0b-48c7-440a-983a-a8f5e35efad0" absoluteBounds="3.5, 10.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/MathIsCoolDataContext/status" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd4a341b-b8f9-478e-8eb4-86974db34f6a" absoluteBounds="3.515, 10.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31667475-4071-4bff-86ba-7a6aa12fd5d9" absoluteBounds="14.75, 13.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/student" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2145a514-ebbd-47c0-b379-fdc5711b95a8" absoluteBounds="14.765, 14.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4f24d7c-2a9e-47aa-870d-0a4bfe901adf" absoluteBounds="11.75, 3.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/MathIsCoolDataContext/team" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a892359c-56e8-4470-823e-f4c5b194bcf7" absoluteBounds="11.765, 4.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.75 : 12.8189111328125); (9.75 : 13.9142976888021); (10.1666661666667 : 13.9142976888021 : JumpStart); (10.3333328333333 : 13.9142976888021 : JumpEnd); (10.8229166666667 : 13.9142976888021 : JumpStart); (10.9895833333333 : 13.9142976888021 : JumpEnd); (11.5 : 13.9142976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/User1/User1_UserClaim" />
+      <nodes>
+        <classShapeMoniker Id="3259f7cd-878e-40c2-9b48-2c5745f09a3e" />
+        <classShapeMoniker Id="8faaa2c2-94cb-409c-9b10-3cdbcaa26cf2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 11.6931469726562); (10.8229166666667 : 11.6931469726562 : JumpStart); (11.0833333333333 : 11.6931469726562 : JumpEnd); (11.5 : 11.6931469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/User1/User1_UserLogin" />
+      <nodes>
+        <classShapeMoniker Id="3259f7cd-878e-40c2-9b48-2c5745f09a3e" />
+        <classShapeMoniker Id="56359bd8-94ec-4f65-95a3-072a8d6c41e5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.2499995 : 18.375); (10.2499995 : 13.0689111328125); (10.8229166666667 : 13.0689111328125 : JumpStart); (10.9895833333333 : 13.0689111328125 : JumpEnd); (11 : 13.0689111328125); (11 : 8.81411987825521); (11.5 : 8.81411987825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/Role/Role_UserRole" />
+      <nodes>
+        <classShapeMoniker Id="b9bb21f3-56cb-4b32-835b-dc40332581db" />
+        <classShapeMoniker Id="a0342420-76d4-446c-892b-3969e61bb194" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 9.31574375651042); (10.8229166666667 : 9.31574375651042 : JumpStart); (11.0833333333333 : 9.31574375651042 : JumpEnd); (11.5 : 9.31574375651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/User1/User1_UserRole" />
+      <nodes>
+        <classShapeMoniker Id="3259f7cd-878e-40c2-9b48-2c5745f09a3e" />
+        <classShapeMoniker Id="a0342420-76d4-446c-892b-3969e61bb194" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 16.7027498372396); (3.5 : 16.7027498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/user/user_invoice" />
+      <nodes>
+        <classShapeMoniker Id="8fc6f053-9ef6-4e22-8f34-dd64053669b9" />
+        <classShapeMoniker Id="ad5bb76c-d6ba-4857-979d-5791764faf0b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 16.0104484049479); (5.79166666666667 : 16.0104484049479 : JumpStart); (5.95833333333333 : 16.0104484049479 : JumpEnd); (6.25 : 16.0104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/invoice/invoice_line_item" />
+      <nodes>
+        <classShapeMoniker Id="ad5bb76c-d6ba-4857-979d-5791764faf0b" />
+        <classShapeMoniker Id="15988a48-8695-4277-8597-7d69f4e339d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 19.875); (2.125 : 18.4439111328125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/permission/permission_user" />
+      <nodes>
+        <classShapeMoniker Id="a243effe-0933-43e7-aef7-f64b069a0cef" />
+        <classShapeMoniker Id="8fc6f053-9ef6-4e22-8f34-dd64053669b9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 15.5104484049479); (10.1666661666667 : 15.5104484049479 : JumpStart); (10.3333328333333 : 15.5104484049479 : JumpEnd); (10.90625 : 15.5104484049479); (10.90625 : 6.04970540364583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MathIsCoolDataContext/line_item/line_item_registration" />
+      <nodes>
+        <classShapeMoniker Id="15988a48-8695-4277-8597-7d69f4e339d7" />
+        <classShapeMoniker Id="fe77c6b5-9287-4548-b6d7-2fadcb06a9c6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.09699625651042); (9.9218725 : 7.09699625651042); (9.9218725 : 6.04970540364583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/registration_type/registration_type_registration" />
+      <nodes>
+        <classShapeMoniker Id="dbc67bdf-5aec-45a3-9f7e-97d9312039b6" />
+        <classShapeMoniker Id="fe77c6b5-9287-4548-b6d7-2fadcb06a9c6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.31807305724159); (5.875 : 9.69307305724159); (5.875 : 21.7315991210938); (6.25 : 21.7315991210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/comp_level/comp_level_sample" />
+      <nodes>
+        <classShapeMoniker Id="a5723b20-ba48-401f-ae11-90d0b7051b5e" />
+        <classShapeMoniker Id="2f7db280-ee14-47dd-bc1e-2f3043f4a232" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.7107568359375); (5.79166666666667 : 5.7107568359375 : JumpStart); (6.11458333333333 : 5.7107568359375 : JumpEnd); (9 : 5.7107568359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/school/school_registration" />
+      <nodes>
+        <classShapeMoniker Id="4785ec33-bd89-484d-a836-9a7d2cde2985" />
+        <classShapeMoniker Id="fe77c6b5-9287-4548-b6d7-2fadcb06a9c6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.2892976888021); (5.79166666666667 : 13.2892976888021 : JumpStart); (5.95833333333333 : 13.2892976888021 : JumpEnd); (7.25 : 13.2892976888021); (7.25 : 14.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/sku/sku_line_item" />
+      <nodes>
+        <classShapeMoniker Id="accd9556-1a7c-417c-86e6-df2bceb0f35b" />
+        <classShapeMoniker Id="15988a48-8695-4277-8597-7d69f4e339d7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 4.56814697265625); (11.75 : 4.56814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/registration/registration_team" />
+      <nodes>
+        <classShapeMoniker Id="fe77c6b5-9287-4548-b6d7-2fadcb06a9c6" />
+        <classShapeMoniker Id="c4f24d7c-2a9e-47aa-870d-0a4bfe901adf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4a4156bd-f00d-4bfa-91d3-d2308ef851c1" absoluteBounds="14.375, 16.75, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/MathIsCoolDataContext/schools" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59f0233c-f025-4211-886f-31a003fe81e6" absoluteBounds="14.39, 17.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f29b93d-4f97-46b0-84c3-816e531bdd70" absoluteBounds="17.375, 6.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="faf67c39-16d3-415f-9aba-5415234e34f4" absoluteBounds="17.39, 7.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76912096-612f-436a-a2bb-52f1be92afe1" absoluteBounds="9.25, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/MathIsCoolDataContext/users" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d596eae-120d-452a-ab18-568e822aa464" absoluteBounds="9.265, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb8dc7bb-e26d-497d-9d45-50d87a1b0b65" absoluteBounds="17.25, 16.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/MathIsCoolDataContext/roles" />
+      <nestedChildShapes>
+        <elementListCompartment Id="97c890bf-3664-415e-9db4-5d323eeb16fb" absoluteBounds="17.265, 17.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="673c1949-b508-4fb0-8f4b-24d94a2bcf3e" absoluteBounds="13.25, 19.875, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/MathIsCoolDataContext/statuses" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f3a45a3-c874-4f61-bc78-514fcd672e5c" absoluteBounds="13.265, 20.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5081e67d-c505-4b7b-b4d8-4dee54dff139" absoluteBounds="17.375, 18.75, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/MathIsCoolDataContext/compLevels" />
+      <nestedChildShapes>
+        <elementListCompartment Id="235d7d24-9421-4bc5-b39f-65e3c4f9b0f1" absoluteBounds="17.39, 19.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f03c2449-3c5a-4243-92ae-7f2fa102c373" absoluteBounds="17.375, 10.25, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/MathIsCoolDataContext/RegistrationView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ef78b38-e6b4-4724-ba91-1bc0ba1dc4a6" absoluteBounds="17.39, 10.71, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61389634-00ea-451e-a18a-a75c9dc1cf1d" absoluteBounds="0.75, 2, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/MathIsCoolDataContext/address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5d082f0-ebbd-442b-a634-20df9e2ae91a" absoluteBounds="0.76500000000000012, 2.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.91909912109375); (3.5 : 2.91909912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MathIsCoolDataContext/address/address_comp_location" />
+      <nodes>
+        <classShapeMoniker Id="61389634-00ea-451e-a18a-a75c9dc1cf1d" />
+        <classShapeMoniker Id="9fba44f7-b0af-489e-9217-2b08faca77ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 4.34780110677083); (1.75 : 5.77005126953125); (3.5 : 5.77005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MathIsCoolDataContext/address/address_school" />
+      <nodes>
+        <classShapeMoniker Id="61389634-00ea-451e-a18a-a75c9dc1cf1d" />
+        <classShapeMoniker Id="4785ec33-bd89-484d-a836-9a7d2cde2985" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="13738f4c-c72a-499b-b0e9-31bb6a17cddf" absoluteBounds="6.25, 2, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/MathIsCoolDataContext/competition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7426a29-3707-4083-8bad-eb18543c8ce5" absoluteBounds="6.265, 2.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 4.21715413411458); (9 : 4.21715413411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/competition/competition_registration" />
+      <nodes>
+        <classShapeMoniker Id="13738f4c-c72a-499b-b0e9-31bb6a17cddf" />
+        <classShapeMoniker Id="fe77c6b5-9287-4548-b6d7-2fadcb06a9c6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.125); (5.875 : 7.75); (5.875 : 3.65465413411458); (6.25 : 3.65465413411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/comp_level/comp_level_competition" />
+      <nodes>
+        <classShapeMoniker Id="a5723b20-ba48-401f-ae11-90d0b7051b5e" />
+        <classShapeMoniker Id="13738f4c-c72a-499b-b0e9-31bb6a17cddf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.76482706705729); (6.25 : 2.76482706705729)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/comp_location/comp_location_competition" />
+      <nodes>
+        <classShapeMoniker Id="9fba44f7-b0af-489e-9217-2b08faca77ca" />
+        <classShapeMoniker Id="13738f4c-c72a-499b-b0e9-31bb6a17cddf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.1562264964944); (5.81607443490112 : 9.84015206159327 : JumpStart); (5.93392556509888 : 9.72230093139551 : JumpEnd); (6.03125 : 9.62497649649439); (6.03125 : 4.51323320117188); (6.25 : 4.51323320117188)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MathIsCoolDataContext/status/status_competition" />
+      <nodes>
+        <classShapeMoniker Id="228b5a0b-48c7-440a-983a-a8f5e35efad0" />
+        <classShapeMoniker Id="13738f4c-c72a-499b-b0e9-31bb6a17cddf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="35f4096a-519d-4b62-95d7-27d5464f88e9" absoluteBounds="17.125, 0.75, 2, 4.2708154296875">
+      <DataClassMoniker Name="/MathIsCoolDataContext/competitions" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35623761-b3cb-4b09-97fb-298a63c41a77" absoluteBounds="17.14, 1.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5dfa8698-7e2b-4efc-8a28-665a64b8eff0" absoluteBounds="11.625, 15.625, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/MathIsCoolDataContext/CalendarCompetition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="568ed768-135b-4921-9d52-09cb9d11b4c8" absoluteBounds="11.64, 16.085, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

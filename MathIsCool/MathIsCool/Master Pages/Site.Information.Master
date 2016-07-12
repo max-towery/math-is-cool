@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Site.Information.master.cs" Inherits="MathIsCool.Master_Pages.Site_Information" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div class="container-full">
+        <div class="col-md-9 col-lg-10">
+            <asp:ContentPlaceHolder ID="MainForm" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="contacts" class="col-md-3 col-lg-2">
+            <div class="media">
+                <div class="pull-left">
+                <a href="#">
+                    <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                </a>
+                </div>
+                <div class="media-body">
+                <h4 class="media-heading">Seattle Director</h4>
+                    <p><span>Tom Tosch</span>
+                        <span>Mount Rainer High School</span>
+                        <span>19465 Marine View Dr. SW</span>
+                        <span>Normandy Park, WA</span>
+                        <span>98166</span>
+                        <span>email: seattle@academicsarecool.com</span> 
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                  <div class="pull-left">
+                    <a href="#">
+                      <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Spokane Director</h4>
+                        <p>Gregg Sampson
+                            email: spokane@academicsarecool.com
+                        </p>
+                  </div>
+                </div>
+            <div class="media">
+                  <div class="pull-left">
+                    <a href="#">
+                      <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Moses Lake Director</h4>
+                      <p>Triscia Hochstatter
+                         Moses Lake High School
+                         803 E. Sharon Avenue
+                         Moses Lake, WA
+                         98837
+                         phone: 509.766.2650 ext. 2780
+                         email: moseslake@academicsarecool.com
+                      </p>
+                  </div>
+                </div>
+            <div class="media">
+                  <div class="pull-left">
+                    <a href="#">
+                      <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Tri-Cities Director</h4>
+                  </div>
+                </div>
+            <div class="media">
+                <div class="pull-left">
+                <a href="#">
+                    <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                </a>
+                </div>
+                <div class="media-body">
+                <h4 class="media-heading">Wenatchee Director</h4>
+                    <p> Mary Kulas Nordt 
+                    phone: 509.470.2037 
+                    email: wenatchee@academicsarecool.com
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                  <div class="pull-left">
+                    <a href="#">
+                      <img class="media-object" src="http://placehold.it/64x64" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Vancouver Director</h4>
+                  </div>
+            </div>
+            <asp:ContentPlaceHolder ID="SideBar" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    
+</asp:Content>
